@@ -1,0 +1,20 @@
+p{
+  color: brown;
+}
+.div{
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.div-card{
+flex:1;
+min-width: 250px;
+}
+@media(max-width : 768px) {
+  .div-card{flex-direction: column;
+  }
+}
