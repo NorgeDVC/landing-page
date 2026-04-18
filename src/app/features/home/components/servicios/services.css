@@ -1,0 +1,26 @@
+p{
+  color: rgb(185, 5, 65);
+}
+.div{
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+}
+.div-card{
+flex:1;
+min-width: 250px;
+}
+@media(max-width : 768px) {
+  .div-card{flex-direction: column;
+
+  }
+}
+img{
+  width: 20%;
+  height: auto;
+}

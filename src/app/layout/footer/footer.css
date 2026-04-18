@@ -1,0 +1,267 @@
+
+.footer {
+  background-image: url('/images/fondo-hero3.png');
+  background-size: cover;
+  background-position: center;
+  color: #e0e0e0;
+  padding: 60px 0 20px;
+  position: relative;
+  margin-top: 60px;
+}
+
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75); 
+  z-index: 1;
+}
+
+
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #d43f6b, #f5a3c7, #d43f6b);
+  z-index: 2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+/* Columnas */
+.col-lg-2,
+.col-lg-3,
+.col-md-6 {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+/* Títulos */
+.footer-title {
+  color: #d43f6b;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  position: relative;
+  padding-bottom: 3px;
+  display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: #d43f6b;
+}
+
+/* Listas generales */
+.footer-links,
+.footer-hours,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-hours li,
+.footer-contact li {
+  margin-bottom: 0px;
+}
+
+/* Enlaces */
+.footer-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer-links a:hover {
+  color: #d43f6b;
+  transform: translateX(5px);
+}
+
+/* Horarios */
+.footer-hours li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-hours li span {
+  color: #d4d4d4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer-hours li strong {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Contacto */
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-contact li span:first-child {
+  font-size: 1rem;
+  min-width: 30px;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+}
+
+.footer-contact li span:last-child {
+  color: #e0e0e0;
+  word-break: break-word;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Divisor */
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 40px 0 20px;
+}
+
+/* Parte inferior */
+.footer-bottom {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.goodbye-message {
+  font-style: italic;
+  font-size: 1.7rem;
+  color: #d43f6b;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: #ccc;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ======================================== */
+/* RESPONSIVE */
+/* ======================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .footer {
+    padding: 50px 0 20px;
+  }
+  
+  .col-lg-2,
+  .col-lg-3,
+  .col-md-6 {
+    min-width: 280px;
+  }
+  
+  .footer-hours li {
+    justify-content: center;
+  }
+  
+  .footer-contact li {
+    justify-content: center;
+  }
+  
+  .goodbye-message {
+    font-size: 1.4rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+  
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .col-lg-2,
+  .col-lg-3,
+  .col-md-6 {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .footer-title {
+    font-size: 1.1rem;
+  }
+  
+  .footer-hours li {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .footer-contact li {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .goodbye-message {
+    font-size: 1.2rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 0 15px;
+  }
+  
+  .col-lg-2,
+  .col-lg-3,
+  .col-md-6 {
+    max-width: 100%;
+  }
+  
+  .goodbye-message {
+    font-size: 1rem;
+  }
+  
+  .copyright {
+    font-size: 0.75rem;
+  }
+}

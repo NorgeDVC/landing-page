@@ -2,10 +2,8 @@
   <div class="container">
     <!-- Logo y marca -->
     <a class="navbar-brand" style="cursor: pointer">
-      Zapatería <strong class="text-primary">Logo</strong>
+       R <strong style="color: #d43f6b;">Recovers</strong>
     </a>
-
-    <!-- Botón Hamburguesa (visible en móviles) -->
     <button
       class="navbar-toggler"
       type="button"
@@ -22,16 +20,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link">Servicios</a>
+          <a class="nav-link" (click)="scrollTo('servicios')">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Transformaciones</a>
+          <a class="nav-link" (click)="scrollTo('gallery')">Transformaciones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Testimonios</a>
+          <a class="nav-link" (click)="scrollTo('testimonios')">Testimonios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Contacto</a>
+          <a class="nav-link" (click)="scrollTo('contacto')">Contacto</a>
         </li>
       </ul>
     </div>

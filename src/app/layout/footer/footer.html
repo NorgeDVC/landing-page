@@ -1,1 +1,66 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="container">
+    
+    <div class="row g-4">
+      <!-- Columna 1 enlaces -->
+      <div class="col-lg-2 col-md-6">
+        <h4 class="footer-title">Enlaces</h4>
+        <ul class="footer-links">
+          <li><a (click)="scrollTo('servicios')">Servicios</a></li>
+          <li><a (click)="scrollTo('gallery')">Transformaciones</a></li>
+          <li><a (click)="scrollTo('testimonios')">Testimonios</a></li>
+          <li><a (click)="scrollTo('contacto')">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 2 horarios -->
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Horarios</h4>
+        <ul class="footer-hours">
+          <li>
+            <span>Lunes a Domingo:</span>
+            <strong>Desde las 8:00 AM</strong>
+          </li>
+          <li>
+            <span>Siempre abiertos:</span>
+            <strong>Para cuidar sus zapatos</strong>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Contacto directo -->
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Contacto</h4>
+        <ul class="footer-contact">
+          <li>
+            <span>Calle Heredia # 455 % Clarín y San Agustín. Santiago de Cuba</span>
+          </li>
+          <li>
+            <span>50049125-50154488-50154494</span>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!-- Línea divisoria -->
+    <div class="footer-divider"></div>
+
+    <!-- Frase de despedida y copyright -->
+    <div class="footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h2 class="goodbye-message mb-0">
+            "Transformamos tus zapatos favoritos para que sigan caminando contigo" 
+          </h2>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="copyright mb-0">
+            © 2026 Todos los derechos reservados
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>

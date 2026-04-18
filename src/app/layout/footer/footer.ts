@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './footer.css',
 })
 export class Footer {
-
+ scrollTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

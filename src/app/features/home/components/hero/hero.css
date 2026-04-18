@@ -1,0 +1,76 @@
+
+h1{
+  font-family: serif;
+  font-size: clamp(2.5rem,8vw,4rem);
+  margin-bottom: 20px;
+}
+.hero{
+  background-image: url('/images/fondo-hero3.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+    position: relative;
+  z-index: 1;
+
+}
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero-content{
+text-align: center;
+ margin: auto;
+background-color:transparent;
+width: calc(90%-20px);
+box-sizing: border-box;
+color: aliceblue;
+max-width: 700px;
+font-size: clamp(1rem,5vw,1rem);
+overflow-wrap: break-word;
+word-break: break-word;
+text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+span{
+   font-size: clamp(1.5rem,8vw,4rem);
+
+}
+.div-texto{
+   margin: auto;
+  width: 100%;
+  max-width: 500px;
+  font-size: clamp(1.2rem,3vw,1rem);
+  font-family: serif;
+  box-sizing: border-box;
+
+}
+button{
+  border:none;
+  background-color: transparent;
+  border-bottom: 2px solid #dadada;
+  padding: 6px 15px;
+  transition:  all 0.2s ease;
+  font-family: serif;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+button:hover{
+background-color: #eee3;
+border-radius: 10px;
+}
+@madia(max-width:768px){
+
+}
