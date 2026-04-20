@@ -2,7 +2,7 @@
   <div class="container">
 
     <!-- Título de la sección -->
-    <div class="section-header text-center ">
+    <div class="section-header text-center">
       <h2 class="display-5 fw-bold"><span style="color: #d43f6b;">Transformaciones</span> que hablan por sí solas</h2>
       <p class="lead text-secondary">Un solo vistazo, dos realidades completamente diferentes</p>
     </div>
@@ -13,11 +13,14 @@
       <!-- Tarjeta 1 -->
       <div class="gallery-card">
         <div class="image-container">
-          <img src="images/zapato-antes-despues1.png" alt="Antes y después de zapatillas convertidas en tacos">
-
+          <img ngSrc="images/zapato-antes-despues1.png"
+               width="400"
+               height="280"
+               loading="lazy"
+               alt="Antes y después de zapatillas convertidas en tacos">
         </div>
         <div class="gallery-info">
-          <h4> Zapatillas convertidas en tacos</h4>
+          <h4>Zapatillas convertidas en tacos</h4>
           <p>De planas a elegantes tacones de 10cm</p>
         </div>
       </div>
@@ -25,11 +28,14 @@
       <!-- Tarjeta 2 -->
       <div class="gallery-card">
         <div class="image-container">
-          <img src="images/zapato-antes-despues2.png" alt="Antes y después cambio de color">
-
+          <img ngSrc="images/zapato-antes-despues2.png"
+               width="400"
+               height="280"
+               loading="lazy"
+               alt="Antes y después cambio de color">
         </div>
         <div class="gallery-info">
-          <h4> Cambio de color completo</h4>
+          <h4>Cambio de color completo</h4>
           <p>De negro a borgoña vibrante</p>
         </div>
       </div>
@@ -37,11 +43,14 @@
       <!-- Tarjeta 3 -->
       <div class="gallery-card">
         <div class="image-container">
-          <img src="images/zapato-antes-despues3.png" alt="Antes y después de botas rotas">
-
+          <img ngSrc="images/zapato-antes-despues3.png"
+               width="400"
+               height="280"
+               loading="lazy"
+               alt="Antes y después de botas rotas">
         </div>
         <div class="gallery-info">
-          <h4> Botas rotas a botines modernos</h4>
+          <h4>Botas rotas a botines modernos</h4>
           <p>Reparación y transformación total</p>
         </div>
       </div>
@@ -49,10 +58,14 @@
       <!-- Tarjeta 4 -->
       <div class="gallery-card">
         <div class="image-container">
-          <img src="images/zapato-antes-despues4.png" alt="Antes y después reparación de tacos">
+          <img ngSrc="images/zapato-antes-despues4.png"
+               width="400"
+               height="280"
+               loading="lazy"
+               alt="Antes y después reparación de tacos">
         </div>
         <div class="gallery-info">
-          <h4> Reparación de tacos y suelas</h4>
+          <h4>Reparación de tacos y suelas</h4>
           <p>Tacos rotos renovados como nuevos</p>
         </div>
       </div>
@@ -60,10 +73,14 @@
       <!-- Tarjeta 5 -->
       <div class="gallery-card">
         <div class="image-container">
-          <img src="images/zapato-antes-despues5.png" alt="Antes y después personalización">
+          <img ngSrc="images/zapato-antes-despues5.png"
+               width="400"
+               height="280"
+               loading="lazy"
+               alt="Antes y después personalización">
         </div>
         <div class="gallery-info">
-          <h4> Personalización con hebillas</h4>
+          <h4>Personalización con hebillas</h4>
           <p>Agregamos detalles dorados únicos</p>
         </div>
       </div>
@@ -71,8 +88,11 @@
       <!-- Tarjeta 6 -->
       <div class="gallery-card">
         <div class="image-container">
-          <img src="images/zapato-antes-despues6.png" alt="Antes y después restauración">
-
+          <img ngSrc="images/zapato-antes-despues6.png"
+               width="400"
+               height="280"
+               loading="lazy"
+               alt="Antes y después restauración">
         </div>
         <div class="gallery-info">
           <h4>Restauración completa</h4>
@@ -81,85 +101,11 @@
       </div>
 
     </div>
-    @if (View) {
-      <div class="gallery-grid">
-        <div class="gallery-card">
-        <div class="image-container">
-          <img src="images/zapato-antes-despues1.png" alt="Antes y después de zapatillas convertidas en tacos">
-
-        </div>
-        <div class="gallery-info">
-          <h4> Zapatillas convertidas en tacos</h4>
-          <p>De planas a elegantes tacones de 10cm</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 2 -->
-      <div class="gallery-card">
-        <div class="image-container">
-          <img src="images/zapato-antes-despues2.png" alt="Antes y después cambio de color">
-
-        </div>
-        <div class="gallery-info">
-          <h4> Cambio de color completo</h4>
-          <p>De negro a borgoña vibrante</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 3 -->
-      <div class="gallery-card">
-        <div class="image-container">
-          <img src="images/zapato-antes-despues3.png" alt="Antes y después de botas rotas">
-
-        </div>
-        <div class="gallery-info">
-          <h4> Botas rotas a botines modernos</h4>
-          <p>Reparación y transformación total</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 4 -->
-      <div class="gallery-card">
-        <div class="image-container">
-          <img src="images/zapato-antes-despues4.png" alt="Antes y después reparación de tacos">
-        </div>
-        <div class="gallery-info">
-          <h4> Reparación de tacos y suelas</h4>
-          <p>Tacos rotos renovados como nuevos</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 5 -->
-      <div class="gallery-card">
-        <div class="image-container">
-          <img src="images/zapato-antes-despues5.png" alt="Antes y después personalización">
-        </div>
-        <div class="gallery-info">
-          <h4> Personalización con hebillas</h4>
-          <p>Agregamos detalles dorados únicos</p>
-        </div>
-      </div>
-
-      <!-- Tarjeta 6 -->
-      <div class="gallery-card">
-        <div class="image-container">
-          <img src="images/zapato-antes-despues6.png" alt="Antes y después restauración">
-
-        </div>
-        <div class="gallery-info">
-          <h4>Restauración completa</h4>
-          <p>Zapatos con valor sentimental recuperados</p>
-        </div>
-      </div>
-      </div>
-
-
-    }
 
     <!-- Botón para ver más -->
     <div class="text-center mt-5">
-      <button class="btn-ver-mas">
-         Ver más transformaciones
+      <button (click)="toogleView()" class="btn-ver-mas">
+        Ver más transformaciones
       </button>
     </div>
 

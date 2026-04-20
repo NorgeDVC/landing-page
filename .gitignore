@@ -1,44 +1,41 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# Dependencias (MUY IMPORTANTE)
+node_modules/
+/.pnp
+.pnp.js
 
-# Compiled output
+# Archivos de build
 /dist
 /tmp
 /out-tsc
-/bazel-out
 
-# Node
-/node_modules
+# IDEs y archivos del sistema
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Archivos de Angular
+/.angular/cache
+
+# Logs
 npm-debug.log
 yarn-error.log
+# Build y distribución
+/dist
+/tmp
+/out-tsc
 
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Imágenes pesadas (opcional, solo si son enormes)
+# *.psd
+# *.tiff
+# *.mp4
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/mcp.json
-.history/*
-
-# Miscellaneous
+# Archivos de Angular
 /.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-__screenshots__/
 
-# System files
-.DS_Store
-Thumbs.db
+# Dependencias
+node_modules/

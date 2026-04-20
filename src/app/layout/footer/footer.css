@@ -1,46 +1,57 @@
-
+/* Footer principal */
 .footer {
-  background-image: url('/images/fondo-hero3.png');
-  background-size: cover;
-  background-position: center;
+  position: relative;
   color: #e0e0e0;
   padding: 60px 0 20px;
-  position: relative;
   margin-top: 60px;
+  overflow: hidden;
+  min-height: 500px;
 }
 
+/* Imagen de fondo optimizada */
+.footer-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
 
-.footer::before {
+/* Overlay oscuro (reemplaza el ::before) */
+.footer-overlay {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.75); 
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2;
 }
 
-
-.footer::after {
-  content: '';
+/* Línea decorativa superior (reemplaza el ::after) */
+.footer-line {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
   background: linear-gradient(90deg, #d43f6b, #f5a3c7, #d43f6b);
-  z-index: 2;
+  z-index: 3;
 }
 
+/* Contenedor principal */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
+/* Fila principal */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -63,11 +74,11 @@
   color: #d43f6b;
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   position: relative;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
   display: inline-block;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .footer-title::after {
@@ -93,7 +104,7 @@
 .footer-links li,
 .footer-hours li,
 .footer-contact li {
-  margin-bottom: 0px;
+  margin-bottom: 12px;
 }
 
 /* Enlaces */
@@ -142,7 +153,7 @@
 .footer-contact li span:first-child {
   font-size: 1rem;
   min-width: 30px;
-  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
 }
 
 .footer-contact li span:last-child {
@@ -188,21 +199,21 @@
   .footer {
     padding: 50px 0 20px;
   }
-  
+
   .col-lg-2,
   .col-lg-3,
   .col-md-6 {
     min-width: 280px;
   }
-  
+
   .footer-hours li {
     justify-content: center;
   }
-  
+
   .footer-contact li {
     justify-content: center;
   }
-  
+
   .goodbye-message {
     font-size: 1.4rem;
   }
@@ -213,33 +224,33 @@
   .footer {
     padding: 40px 0 20px;
   }
-  
+
   .row {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .col-lg-2,
   .col-lg-3,
   .col-md-6 {
     width: 100%;
     max-width: 350px;
   }
-  
+
   .footer-title {
     font-size: 1.1rem;
   }
-  
+
   .footer-hours li {
     flex-wrap: wrap;
     gap: 8px;
   }
-  
+
   .footer-contact li {
     flex-wrap: wrap;
     gap: 8px;
   }
-  
+
   .goodbye-message {
     font-size: 1.2rem;
   }
@@ -250,17 +261,17 @@
   .footer {
     padding: 30px 0 15px;
   }
-  
+
   .col-lg-2,
   .col-lg-3,
   .col-md-6 {
     max-width: 100%;
   }
-  
+
   .goodbye-message {
     font-size: 1rem;
   }
-  
+
   .copyright {
     font-size: 0.75rem;
   }
